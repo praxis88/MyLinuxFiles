@@ -1,6 +1,4 @@
-# Luke's config for the Zoomer Shell
-
-#Adds scripts folder to the PATH variable
+#Sets enviornmental variables
 export PATH=$PATH:/home/christopher/scripts/
 export EDITOR="vim"
 export READER="xreader"
@@ -9,6 +7,10 @@ export BROWSER="chromium"
 export PAGER="less"
 export WM="i3"
 export OPENER="xdg-open"
+
+#Sets Aliases
+#alias 
+
 
  #Enable colors and change prompt:
 autoload -U colors && colors
@@ -24,35 +26,10 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
-
-# vi mode
-bindkey -v
-export KEYTIMEOUT=1
+_comp_options+=(globdots)		
 
 
-# Change cursor shape for different vi modes.
-function zle-keymap-select {
-  if [[ ${KEYMAP} == vicmd ]] ||
-     [[ $1 = 'block' ]]; then
-    echo -ne '\e[1 q'
-  elif [[ ${KEYMAP} == main ]] ||
-       [[ ${KEYMAP} == viins ]] ||
-       [[ ${KEYMAP} = '' ]] ||
-       [[ $1 = 'beam' ]]; then
-    echo -ne '\e[5 q'
-  fi
-}
-zle -N zle-keymap-select
-zle-line-init() {
-    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
-    echo -ne "\e[5 q"
-}
-zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
-
-# Use lf to switch directories and bind it to ctrl-o
+#Creates a lfcd function that opens lf, exiting to the working directory. Binds it to CTRL + o.
 lfcd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
@@ -63,7 +40,6 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
-
 
 
 # Load zsh-syntax-highlighting; should be last.
