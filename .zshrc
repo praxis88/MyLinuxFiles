@@ -12,7 +12,7 @@ export OPENER="xdg-open"
 #alias 
 
 
- #Enable colors and change prompt:
+#Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
@@ -24,6 +24,8 @@ HISTFILE=~/.cache/zsh/history
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
+#Autocompletes with case insensitivity
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-=* r:|=*' 'l:|=* r:|=*'
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		
@@ -40,9 +42,18 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
+bindkey "^?" backward-delete-char
+
+# Use beam shape cursor on startup.
+echo -ne '\e[5 q'
+
+# Use beam shape cursor for each new prompt.
+preexec() {
+echo -ne '\e[5 q'
+}
 
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source /usr/share/doc/find-the-command/ftc.zsh
 
