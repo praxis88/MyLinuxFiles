@@ -1,6 +1,16 @@
 # Luke's config for the Zoomer Shell
 
-# Enable colors and change prompt:
+#Adds scripts folder to the PATH variable
+export PATH=$PATH:/home/christopher/scripts/
+export EDITOR="vim"
+export READER="xreader"
+export TERMINAL="xterm"
+export BROWSER="chromium"
+export PAGER="less"
+export WM="i3"
+export OPENER="xdg-open"
+
+ #Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
@@ -54,7 +64,7 @@ lfcd () {
 }
 bindkey -s '^o' 'lfcd\n'
 
-export PATH=$PATH:~/Scripts/
+
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
