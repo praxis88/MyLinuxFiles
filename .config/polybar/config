@@ -58,7 +58,7 @@ font-3 = MaterialIcons:style=Regular:pixelsize=12:antialias=true;1
 
 modules-left = i3
 modules-center = title
-modules-right = filesystem memory xbacklight pulseaudio eth wlan date 
+modules-right = filesystem memory xbacklight pulseaudio battery eth wlan date 
 
 tray-position = right
 tray-padding = 2
