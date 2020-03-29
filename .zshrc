@@ -44,12 +44,13 @@ lfcd () {
 bindkey -s '^o' 'lfcd\n'
 bindkey "^?" backward-delete-char
 
+
 # Use beam shape cursor on startup.
 echo -ne '\e[5 q'
 
 # Use beam shape cursor for each new prompt.
 preexec() {
-echo -ne '\e[5 q'
+   echo -ne '\e[5 q'
 }
 
 
