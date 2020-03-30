@@ -2,7 +2,7 @@
 export PATH=$PATH:/home/christopher/scripts/
 export EDITOR="vim"
 export READER="xreader"
-export TERMINAL="xterm"
+export TERMINAL="xfce4-terminal"
 export BROWSER="chromium"
 export PAGER="less"
 export WM="i3"
