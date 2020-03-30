@@ -53,8 +53,8 @@ preexec() {
    echo -ne '\e[5 q'
 }
 
+#feh --bg-scale /usr/share/pixmaps/triss.jpg
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/doc/find-the-command/ftc.zsh
 
