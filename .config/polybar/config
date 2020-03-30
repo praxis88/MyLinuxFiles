@@ -16,6 +16,10 @@
 ;
 ;==========================================================
 
+
+
+
+
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #222
@@ -35,6 +39,7 @@ height = 30
 ;offset-y = 1%
 radius = 6.0
 fixed-center = false
+enable-ipc = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -54,11 +59,11 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=12;antialias=true;1
 font-1 = FontAwesome5Free:style=Solid:pixelsize=12:antialias=true;1
 font-2 = FontAwesome5Brands:style=Solid:pixelsize=12:antialias=true;1
-font-3 = MaterialIcons:style=Regular:pixelsize=12:antialias=true;1
+font-3 = Weather Icons:size=12;1
 
 modules-left = i3
 modules-center = title
-modules-right = updates filesystem memory xbacklight pulseaudio battery eth wlan date 
+modules-right = openweathermap-simple updates filesystem memory xbacklight pulseaudio battery eth wlan date 
 
 tray-position = right
 tray-padding = 2
@@ -83,13 +88,16 @@ type = internal/xwindow
 label = %title:0:30:...%
 
 [module/updates]
+type = custom/ipc
+hook-0 = yay -Qu | wc -l
+initial = 1
+format-prefix = "  "
+
+[module/openweathermap-simple]
 type = custom/script
-exec = yay -Qu | wc -l
+exec = ~/scripts/openweathermap-simple.sh
 interval = 600
-format = <label>
-label =   %output%
-
-
+label-font = 4
 
 [module/filesystem]
 type = internal/fs

@@ -1,5 +1,4 @@
 #Sets enviornmental variables
-export PATH=$PATH:/home/christopher/scripts/
 export EDITOR="vim"
 export READER="xreader"
 export TERMINAL="xfce4-terminal"
@@ -7,6 +6,7 @@ export BROWSER="chromium"
 export PAGER="less"
 export WM="i3"
 export OPENER="xdg-open"
+
 
 #Sets Aliases
 #alias 
