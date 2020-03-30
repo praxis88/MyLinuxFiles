@@ -15,8 +15,6 @@ for_window [class="^.*"] border pixel 1
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id $HOME/.config/starting/keyboardconf.sh
 exec --no-startup-id light-locker
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
@@ -197,8 +195,10 @@ bindsym Mod1+r mode "resize"
 #        status_command i3status
 #}
 
+#Sets i3 Gaps
 gaps inner 8
 gaps outer 0
 
-
+#Loads Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 

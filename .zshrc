@@ -10,7 +10,7 @@ export OPENER="xdg-open"
 
 #Sets Aliases
 #alias 
-
+ 
 
 #Enable colors and change prompt:
 autoload -U colors && colors
