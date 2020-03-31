@@ -337,7 +337,8 @@ snmp-server user "USER-NAME" "GROUP-NAME" v3 auth MD5|SHA "AUTH-PASSWORD" priv d
 
 # SWITCHPORT ANALYZER
 # ----------------------------------------------------
-remote-span
+monitor session "NUMBER" source interface|vlan "NUMBER"
+monitor session "NUMBER" destination interface|vlan "NUMBER"
 
 
 
