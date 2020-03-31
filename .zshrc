@@ -8,8 +8,6 @@ export WM="i3"
 export OPENER="xdg-open"
 
 
-#Sets Aliases
-#alias 
  
 
 #Enable colors and change prompt:
@@ -55,6 +53,10 @@ preexec() {
 
 #feh --bg-scale /usr/share/pixmaps/triss.jpg
 export PATH=$PATH:/home/christopher/scripts
+
+
+#Sets Aliases
+alias sx=openimage.sh 
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
