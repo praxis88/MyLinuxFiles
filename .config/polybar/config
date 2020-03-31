@@ -63,7 +63,8 @@ font-3 = Weather Icons:size=12;1
 
 modules-left = i3
 modules-center = title
-modules-right = openweathermap-simple updates filesystem memory xbacklight pulseaudio battery eth wlan wlan2 date 
+modules-right = inbox openweathermap-simple updates xbacklight pulseaudio battery eth wlan wlan2 date 
+
 
 tray-position = right
 tray-padding = 2
@@ -111,6 +112,11 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/title]
 type = internal/xwindow
 
+[module/inbox]
+type = custom/script
+exec = inbox-shellnetrc.sh
+interval = 60
+format-prefix ="  "
 
 [module/i3]
 type = internal/i3
