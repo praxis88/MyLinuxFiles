@@ -54,6 +54,7 @@ preexec() {
 }
 
 #feh --bg-scale /usr/share/pixmaps/triss.jpg
+export PATH=$PATH:/home/christopher/scripts
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -63,7 +63,7 @@ font-3 = Weather Icons:size=12;1
 
 modules-left = i3
 modules-center = title
-modules-right = openweathermap-simple updates filesystem memory xbacklight pulseaudio battery eth wlan date 
+modules-right = openweathermap-simple updates filesystem memory xbacklight pulseaudio battery eth wlan wlan2 date 
 
 tray-position = right
 tray-padding = 2
@@ -186,6 +186,15 @@ label-connected =  %local_ip%
 
 format-disconnected =
 
+[module/wlan2]
+type = internal/network
+interface = wlan0
+interval = 3.0
+
+format-connected = <label-connected>
+label-connected =  %local_ip%
+
+format-disconnected =
 [module/eth]
 type = internal/network
 interface = enp3s0
