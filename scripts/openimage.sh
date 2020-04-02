@@ -1,10 +1,10 @@
 #!/bin/bash
 
-target Image="${1##*/}"
+targetImage="${1##*/}"
 
 for f in *.{png,jpg}; do
-	[["$f" = "$targetImage" ]] && continue
-	images+=("f")
+	[[ "$f" = "$targetImage" ]] && continue
+	images+=("$f")
 done
 
-sxiv -b "$targetImage" "${images[@]}" &
+sxiv "$targetImage" "${images[@]}" 2>/dev/null &
