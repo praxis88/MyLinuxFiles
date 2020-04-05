@@ -87,6 +87,7 @@ label = %title:0:30:...%
 type = custom/ipc
 hook-0 = checkupdates | wc -l
 initial = 1
+interval = 1800
 format-prefix = "  "
 
 [module/openweathermap-simple]
