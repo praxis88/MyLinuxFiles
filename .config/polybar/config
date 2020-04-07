@@ -74,7 +74,7 @@ cursor-scroll = ns-resize
 
 [module/corona]
 type = custom/script
-exec = "covid19-cli.sh -c USA -r -n | grep "Cases:" | head -1 | awk '{print $2}'" 
+exec = "covid19-cli.sh -c USA -r -n | grep "Active" | head -1 | awk '{print $2}'" 
 label = %output%
 format-prefix = " "
 interval = 600
