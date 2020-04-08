@@ -1,0 +1,102 @@
+window:
+  title: Alacritty - Terminal
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: JetBrains Mono
+    style: Medium
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
+  size: 10.0
+
+draw_bold_text_with_bright_colors: false
+
+colors:
+  primary:
+  #  background: '#000000'
+    foreground: '#F2C550'
+
+    #dim_foreground: '#9a9a9a'
+    #bright_foreground: '#ffffff'
+
+  cursor:
+    text: '#191919'
+    cursor: '#d8dee9'
+
+  selection:
+    text: '#191919'
+    background: '#d8dee9'
+
+  normal:
+    black:   '#313539'
+    red:     '#b02626'
+    green:   '#40a62f'
+    yellow:  '#f2e635'
+    blue:    '#314ad0'
+    magenta: '#b30ad0'
+    cyan:    '#32d0fc'
+    white:   '#acadb1'
+
+  bright:
+    black:   '#313539'
+    red:     '#b02626'
+    green:   '#40a62f'
+    yellow:  '#f2e635'
+    blue:    '#314ad0'
+    magenta: '#b30ad0'
+    cyan:    '#32d0fc'
+    white:   '#acadb1'
+
+  dim:
+    black:   '#676f78'
+    red:     '#b55454'
+    green:   '#78a670'
+    yellow:  '#faf380'
+    blue:    '#707fd0'
+    magenta: '#c583d0'
+    cyan:    '#8adaf1'
+    white:   '#e0e3e7'
+
+
+background_opacity: 0.8
+
+selection:
+  save_to_clipboard: false
+
+dynamic_title: true
+
+cursor:
+  style: Beam
+  unfocused_hollow: true
+live_config_reload: true
+
+shell:
+  program: /bin/zsh
+
+mouse:
+  url:
+   launcher:
+    program: xdg-open
+
+key_bindings:
+  # (Windows, Linux, and BSD only)
+  - { key: V,        mods: Control|Shift, action: Paste            }
+  - { key: C,        mods: Control|Shift, action: Copy             }
+  - { key: Insert,   mods: Shift,         action: PasteSelection   }
+  - { key: Key0,     mods: Control,       action: ResetFontSize    }
+  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  - { key: Add,      mods: Control,       action: IncreaseFontSize }
+  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+
