@@ -15,7 +15,7 @@ set clipboard=unnamed
 set runtimepath+=~/.vim/plugged/dracula
 set background=dark
 set t_Co=256
-set spell spelllang=en_us
+set nospell spelllang=en_us
 
 syntax on
 colorscheme codedark  
