@@ -1,0 +1,11 @@
+
+[Default Applications]
+image/png=sx.desktop
+image/jpg=sx.desktop
+image/jpeg=sx.desktop
+application/pdf=xreader.desktop
+text/plain=editor.desktop
+text/html=chromium.desktop
+text/xml=chromium.desktop
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
