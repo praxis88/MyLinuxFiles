@@ -1,14 +1,3 @@
-#Sets enviornmental variables
-export EDITOR="vim"
-export READER="xreader"
-export TERMINAL="alacritty"
-export BROWSER="chromium"
-export PAGER="less"
-export WM="i3"
-export OPENER="xdg-open"
-
-
- 
 
 #Enable colors and change prompt:
 autoload -U colors && colors

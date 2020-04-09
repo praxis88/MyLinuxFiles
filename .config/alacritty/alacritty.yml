@@ -18,7 +18,7 @@ font:
   italic:
     family: JetBrains Mono
     style: Italic
-  size: 10.0
+  size: 16.0
 
 draw_bold_text_with_bright_colors: false
 
@@ -70,7 +70,7 @@ colors:
     white:   '#e0e3e7'
 
 
-background_opacity: 0.8
+background_opacity: 0.9
 
 selection:
   save_to_clipboard: false
