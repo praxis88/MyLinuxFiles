@@ -28,7 +28,7 @@ configuration {
 /*	sort: false;*/
 /*	sorting-method: ;*/
 	case-sensitive: false;
-/*	cycle: true;*/
+	cycle: true;
 /*	sidebar-mode: false;*/
 /*	eh: 1;*/
 /*	auto-select: false;*/
