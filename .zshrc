@@ -48,6 +48,7 @@ export PATH=$PATH:/home/christopher/scripts
 alias sx=openimage.sh 
 alias ls='lsd -hA --group-dirs first'
 
-# Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/doc/pkgfile/command-not-found.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
 
