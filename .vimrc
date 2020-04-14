@@ -11,19 +11,21 @@ call plug#end()
 
 
 set number relativenumber
-set clipboard=unnamed
+set clipboard=unnamedplus
 set runtimepath+=~/.vim/plugged/dracula
 set background=dark
 set t_Co=256
 set nospell spelllang=en_us
+set wrap linebreak nolist
+set ttymouse=sgr
+set mouse=a
 
 syntax on
-colorscheme codedark  
+colorscheme codedark
 let g:airline_theme = 'codedark'
 
 vnoremap <C-c> "+y :let @+=@*<CR>
 map <C-v> "+P
-
 
 
 
