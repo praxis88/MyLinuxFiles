@@ -49,10 +49,10 @@ padding-left = 0
 padding-right = 1
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
-font-0 = fixed:pixelsize=12:antialias=true;1
-#font-0 = JetBrains Mono:style=Medium:size=12:antialias=true;1
+;font-0 = fixed:pixelsize=12:antialias=true;1
+font-0 = JetBrains Mono:style=Regular:size=11:antialias=true;1
 font-1 = FontAwesome5Free:style=Solid:pixelsize=12:antialias=true;1
 font-2 = FontAwesome5Brands:style=Solid:pixelsize=12:antialias=true;1
 font-3 = Weather Icons:size=12;1
@@ -97,14 +97,14 @@ exec = ~/scripts/openweathermap-simple.sh
 interval = 600
 label-font = 4
 
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-label-mounted =  %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
+;[module/filesystem]
+;type = internal/fs
+;interval = 25
+;
+;mount-0 = /
+;label-mounted =  %percentage_used%%
+;label-unmounted = %mountpoint% not mounted
+;label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/title]
 type = internal/xwindow
@@ -155,12 +155,12 @@ type = internal/xbacklight
 format = <label>
 label =  %percentage%%
 
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
-label = %percentage_used%%
+;[module/memory]
+;type = internal/memory
+;interval = 2
+;format-prefix = " "
+;format-prefix-foreground = ${colors.foreground}
+;label = %percentage_used%%
 
 [module/date]
 type = internal/date
