@@ -6,6 +6,7 @@ export BROWSER="chromium"
 export PAGER="less"
 export WM="i3"
 export OPENER="xdg-open"
+export HISTCONTROL="ignoreboth"
 export LF_ICONS="\
 di=:\
 fi=:\

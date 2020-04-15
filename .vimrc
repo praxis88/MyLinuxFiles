@@ -14,7 +14,8 @@ set number relativenumber
 set clipboard=unnamedplus
 set runtimepath+=~/.vim/plugged/dracula
 set background=dark
-set t_Co=256
+" set termguicolors
+" set t_Co=256
 set nospell spelllang=en_us
 set wrap linebreak nolist
 set ttymouse=sgr

@@ -46,12 +46,13 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=12;antialias=true;1
+font-0 = fixed:pixelsize=12:antialias=true;1
+#font-0 = JetBrains Mono:style=Medium:size=12:antialias=true;1
 font-1 = FontAwesome5Free:style=Solid:pixelsize=12:antialias=true;1
 font-2 = FontAwesome5Brands:style=Solid:pixelsize=12:antialias=true;1
 font-3 = Weather Icons:size=12;1
@@ -74,7 +75,7 @@ cursor-scroll = ns-resize
 
 [module/corona]
 type = custom/script
-exec = "covid19-cli.sh -c USA -r -n | grep "Active" | awk '{print $2}'" 
+exec = "export TERM="alacritty" && covid19-cli.sh -c USA -r -n | grep "Active" | awk '{print $2}'" 
 label = %output%
 format-prefix = " "
 interval = 600
@@ -88,7 +89,7 @@ type = custom/ipc
 hook-0 = checkupdates | wc -l
 initial = 1
 interval = 1800
-format-prefix = "  "
+format-prefix = " "
 
 [module/openweathermap-simple]
 type = custom/script
@@ -112,7 +113,7 @@ type = internal/xwindow
 type = custom/script
 exec = inbox-shellnetrc.sh
 interval = 60
-format-prefix ="  "
+format-prefix = " "
 
 [module/i3]
 type = internal/i3
