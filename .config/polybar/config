@@ -62,7 +62,7 @@ font-3 = Weather Icons:size=12;1
 #####################################################################################################
 modules-left = i3
 modules-center = title
-modules-right = corona inbox openweathermap-simple updates xbacklight pulseaudio battery eth wlan wlan2 date 
+modules-right = inbox openweathermap-simple updates xbacklight pulseaudio battery eth wlan wlan2 date 
 #####################################################################################################
 
 tray-position = right
@@ -76,10 +76,9 @@ cursor-scroll = ns-resize
 
 [module/corona]
 type = custom/script
-exec = "export TERM="alacritty" && covid19-cli.sh -c USA -r -n | grep "Active" | awk '{print $2}'" 
-label = %output%
+exec = coronaBar.sh
 format-prefix = " "
-interval = 600
+interval = 1800
  
 [module/xwindow]
 type = internal/xwindow
