@@ -166,10 +166,10 @@
     max_icon_size = 32
 
     # Paths to default icons
-    icon_path = /home/christopher/.local/share/icons/Tela-blue-dark/scalable/devices:/home/christopher/.local/share/icons/Tela-blue-dark/24@2x/actions:/home/christopher/.local/share/icons/Tela-blue-dark/scalable/places:/home/christopher/.local/share/icons/Tela-blue/symbolic/status:/usr/share/icons/hicolor/32x32/apps/:/usr/share/icons/hicolor/22x22/apps/:/usr/share/icons/Adwaita/32x32/legacy/
+    icon_path = /usr/share/icons/Arc-ICONS/actions/32:/usr/share/icons/Arc-ICONS/animations/32:/usr/share/icons/Arc-ICONS/apps/32:/usr/share/icons/Arc-ICONS/categories/32:/usr/share/icons/Arc-ICONS/devices/32:/usr/share/icons/Arc-ICONS/emblems/32:/usr/share/icons/Arc-ICONS/mimetypes/32:/usr/share/icons/Arc-ICONS/panel/32:/usr/share/icons/Arc-ICONS/places/32:/usr/share/icons/Arc-ICONS/status/32:/usr/share/icons/Arc-ICONS/web/32:/usr/share/icons/hicolor/scalable/apps/:/usr/share/icons/hicolor/22x22/apps
 
- 
-    ### History ###
+
+### History ###
 
     # Should a notification popped up from history be sticky or timeout
     # as if it would normally do.

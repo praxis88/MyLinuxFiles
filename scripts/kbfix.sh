@@ -2,5 +2,5 @@
 
 if [ $(uname -n) == 'Laptop' ]; then 
 	setxkbmap -model chromebook
-	echo "Chromebook Keyboard Model Set!"
+	dunstify "Chromebook Keyboard Model Set!"
 fi
