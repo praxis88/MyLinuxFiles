@@ -44,6 +44,7 @@ preexec() {
 export PATH=$PATH:/home/christopher/scripts
 
 
+
 #Sets Aliases
 alias sx=openimage.sh 
 alias ls='lsd -hA --group-dirs first'
