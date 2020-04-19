@@ -24,7 +24,8 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id "udiskie -t"
 exec --no-startup-id blueman-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd 
+#exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd 
+exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id indicator-kdeconnect
 
 # Use pactl to adjust volume in PulseAudio.

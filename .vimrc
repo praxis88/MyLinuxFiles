@@ -2,7 +2,6 @@ unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
 call plug#begin('~/.vim/plugged')
-
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
