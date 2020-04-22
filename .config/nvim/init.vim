@@ -10,7 +10,7 @@ set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
 
 set number relativenumber
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 set background=dark
 " set t_Co=256
 set nospell spelllang=en_us
@@ -27,7 +27,7 @@ let g:Hexokinase_highlighters = ['backgroundfull']
 let g:Hexokinase_optInPatterns = 'full_hex,triple_hex,rgb,rgba,hsl,hsla,colour_names'
 let g:airline_powerline_fonts = 1
 
-vnoremap <C-c> "+y :let @+=@*<CR>
+vnoremap <C-c> "+y 
 map <C-v> "+P
 
 " air-line
