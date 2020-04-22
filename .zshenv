@@ -1,4 +1,4 @@
-export EDITOR="vim"
+export EDITOR="nvim"
 export READER="xreader"
 export TERMINAL="alacritty"
 export COLORTERM="truecolor"
