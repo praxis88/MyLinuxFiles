@@ -2,3 +2,4 @@ Journal Entry,		$HOME/scripts/journalentry.sh
 Covid,			$HOME/scripts/covidlauncher.sh
 Relaunch Polybar,	$HOME/scripts/launch.sh
 Set Wallpaper,		$HOME/scripts/wallpaperSet.sh
+Chromebook Keyboard,	$HOME/scripts/kbfix.sh

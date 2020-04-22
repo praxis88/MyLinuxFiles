@@ -8,4 +8,5 @@ text/plain=editor.desktop
 text/html=chromium.desktop
 text/xml=chromium.desktop
 video/mp4=mpv.desktop
+inode/symlink=nvim.desktop
 video/x-matroska=mpv.desktop
