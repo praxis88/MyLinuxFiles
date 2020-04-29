@@ -3,3 +3,4 @@ Covid,			$HOME/scripts/covidlauncher.sh
 Relaunch Polybar,	$HOME/scripts/launch.sh
 Set Wallpaper,		$HOME/scripts/wallpaperSet.sh
 Chromebook Keyboard,	$HOME/scripts/kbfix.sh
+Xev KeyPicker,		$HOME/scripts/KeyPicker.sh

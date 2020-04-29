@@ -62,7 +62,7 @@ font-3 = Weather Icons:size=12;1
 #####################################################################################################
 modules-left = i3
 modules-center = title
-modules-right = inbox openweathermap-simple updates xbacklight pulseaudio battery eth wlan wlan2 date 
+modules-right = openweathermap-simple updates xbacklight pulseaudio battery eth wlan wlan2 date 
 #####################################################################################################
 
 tray-position = right

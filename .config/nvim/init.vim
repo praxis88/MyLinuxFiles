@@ -12,7 +12,7 @@ set t_8b=[48;2;%lu;%lu;%lum
 set number relativenumber
 set clipboard+=unnamedplus
 set background=dark
-" set t_Co=256
+"set t_Co=256
 set nospell spelllang=en_us
 set wrap linebreak nolist
 set mouse=a

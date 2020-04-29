@@ -29,6 +29,7 @@ exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id indicator-kdeconnect
 exec --no-startup-id "autocutsel -fork"
 exec --no-startup-id "autocutsel -selection PRIMARY -fork"
+exec --no-startup-id sxhkd
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
