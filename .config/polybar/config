@@ -62,7 +62,7 @@ font-3 = Weather Icons:size=12;1
 #####################################################################################################
 modules-left = i3
 modules-center = title
-modules-right = openweathermap-simple updates xbacklight pulseaudio battery eth wlan wlan2 date 
+modules-right = inbox openweathermap-simple updates xbacklight battery eth wlan wlan2 date 
 #####################################################################################################
 
 tray-position = right
@@ -85,11 +85,10 @@ type = internal/xwindow
 label = %title:0:30:...%
 
 [module/updates]
-type = custom/ipc
-hook-0 = checkupdates | wc -l
-initial = 1
-interval = 1800
+type = custom/script
+exec = checkupdates | wc -l
 format-prefix = " "
+interval = 1800
 
 [module/openweathermap-simple]
 type = custom/script
@@ -199,7 +198,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = enp3s0
+interface = eth0
 interval = 3.0
 
 format-connected-prefix = " "
