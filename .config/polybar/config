@@ -110,8 +110,8 @@ type = internal/xwindow
 
 [module/inbox]
 type = custom/script
-exec = inbox-shellnetrc.sh
-interval = 60
+exec = /home/christopher/scripts/inbox-shellnetrc.sh
+interval = 300
 format-prefix = " "
 
 [module/i3]

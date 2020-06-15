@@ -1,0 +1,6 @@
+F12
+ exec /home/christopher/scripts/launcherscript.sh
+alt + t
+ exec /usr/bin/thunar
+alt + c
+ exec /usr/bin/chromium

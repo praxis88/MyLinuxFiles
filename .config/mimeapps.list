@@ -10,3 +10,7 @@ text/xml=chromium.desktop
 video/mp4=mpv.desktop
 inode/symlink=nvim.desktop
 video/x-matroska=mpv.desktop
+x-scheme-handler/http=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+x-scheme-handler/about=chromium.desktop
+x-scheme-handler/unknown=chromium.desktop
