@@ -89,12 +89,15 @@ type = custom/script
 exec = checkupdates | wc -l
 format-prefix = " "
 interval = 1800
+click-left = $TERMINAL -e yay &
 
 [module/openweathermap-simple]
 type = custom/script
 exec = ~/scripts/openweathermap-simple.sh
 interval = 600
 label-font = 4
+click-left = $TERMINAL -e "curl wttr.in & sleep 600" &
+click-right = mpv --loop-file=inf "https://radar.weather.gov/lite/N0R/HTX_loop.gif"
 
 ;[module/filesystem]
 ;type = internal/fs
@@ -113,6 +116,7 @@ type = custom/script
 exec = /home/christopher/scripts/inbox-shellnetrc.sh
 interval = 300
 format-prefix = " "
+click-left = thunderbird &
 
 [module/i3]
 type = internal/i3
