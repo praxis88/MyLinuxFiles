@@ -96,7 +96,7 @@ type = custom/script
 exec = ~/scripts/openweathermap-simple.sh
 interval = 600
 label-font = 4
-click-left = $TERMINAL -e zsh -c "curl wttr.in && sleep 600" &
+click-left = $TERMINAL -e zsh -c  'curl wttr.in; "$SHELL"' 
 click-right = mpv --loop-file=inf "https://radar.weather.gov/lite/N0R/HTX_loop.gif"
 
 ;[module/filesystem]
