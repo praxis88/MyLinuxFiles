@@ -50,7 +50,7 @@ set $right semicolon
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Return exec i3-sensible-terminal
+bindsym Mod1+Return exec termite
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -201,8 +201,16 @@ bindsym Mod1+r mode "resize"
 #        status_command i3status
 #}
 
+client.focused       #FC3C3C #FC3C3C #ffffff  #FC3C3C #FC3C3C
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
 #Sets i3 Gaps
-gaps inner 8
+gaps inner 5
 gaps outer 0
 
 #Loads Polybar
