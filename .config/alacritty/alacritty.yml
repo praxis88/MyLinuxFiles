@@ -18,7 +18,7 @@ font:
   italic:
     family: JetBrainsMono Nerd Font Mono
     style: Italic
-  size: 12.0
+  size: 14.0
 
 draw_bold_text_with_bright_colors: false
 
@@ -70,12 +70,12 @@ colors:
     white:   '#e0e3e7'
 
 
-background_opacity: 0.9
+background_opacity: 1
 
 selection:
   save_to_clipboard: true
 
-dynamic_title: true
+window.dynamic_title: true
 
 cursor:
   style: Beam
@@ -97,7 +97,6 @@ key_bindings:
   - { key: Insert,   mods: Shift,         action: PasteSelection   }
   - { key: Key0,     mods: Control,       action: ResetFontSize    }
   - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  - { key: Add,      mods: Control,       action: IncreaseFontSize }
-  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
 

@@ -1,5 +1,7 @@
 F12
  exec /home/christopher/scripts/launcherscript.sh
+F9
+ playerctl play-pause
 alt + t
  exec /usr/bin/thunar
 alt + c

@@ -1,3 +1,4 @@
+Monitors,		$HOME/scripts/Monitors.sh
 Journal Entry,		$HOME/scripts/journalentry.sh
 Covid,			$HOME/scripts/covidlauncher.sh
 Relaunch Polybar,	$HOME/scripts/launch.sh

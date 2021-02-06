@@ -1,0 +1,7 @@
+[Data Source]
+DisplayName=chall@dynamic-networks.net
+Enabled=true
+Parent=e7e3c57a7164588c3500f7f37444953248af4a41
+
+[Mail Transport]
+BackendName=ews

@@ -1,4 +1,3 @@
-
 [Default Applications]
 image/png=sx.desktop
 image/jpg=sx.desktop
@@ -14,3 +13,8 @@ x-scheme-handler/http=chromium.desktop
 x-scheme-handler/https=chromium.desktop
 x-scheme-handler/about=chromium.desktop
 x-scheme-handler/unknown=chromium.desktop
+x-scheme-handler/msteams=teams.desktop
+
+[Added Associations]
+application/x-shellscript=leafpad.desktop;
+application/x-cd-image=gnome-disk-image-writer.desktop;

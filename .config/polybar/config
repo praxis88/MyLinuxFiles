@@ -30,6 +30,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/bar1]
+monitor = ${env:MONITOR:}
 width = 100%
 height = 30
 radius = 6.0
@@ -62,7 +63,7 @@ font-3 = Weather Icons:size=12;1
 #####################################################################################################
 modules-left = i3
 modules-center = title
-modules-right = inbox openweathermap-simple updates xbacklight battery eth wlan wlan2 date 
+modules-right = inbox openweathermap-simple updates xbacklight battery eth wlan wlan2 memory date 
 #####################################################################################################
 
 tray-position = right
@@ -159,12 +160,12 @@ type = internal/xbacklight
 format = <label>
 label =  %percentage%%
 
-;[module/memory]
-;type = internal/memory
-;interval = 2
-;format-prefix = " "
-;format-prefix-foreground = ${colors.foreground}
-;label = %percentage_used%%
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+label = %percentage_used%%
 
 [module/date]
 type = internal/date
@@ -203,7 +204,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = eth0
+interface = enp3s0
 interval = 3.0
 
 format-connected-prefix = " "
