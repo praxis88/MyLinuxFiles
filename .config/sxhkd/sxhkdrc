@@ -1,8 +1,18 @@
 F12
  exec /home/christopher/scripts/launcherscript.sh
-F9
- playerctl play-pause
 alt + t
  exec /usr/bin/thunar
 alt + c
  exec /usr/bin/chromium
+F6
+ brightnessctl s 5%- & dunstify 'Brightness Down 5%'
+F7
+ brightnessctl s +5% && dunstify 'Brightness Up 5%'
+F8
+ pactl set-sink-mute @DEFAULT_SINK@ toggle && dunstify 'Volume Mute Toggled'
+F9
+ pactl set-sink-volume @DEFAULT_SINK@ -5% && dunstify 'Volume Down 5%'
+##F9
+ ##playerctl play-pause
+F10
+ pactl set-sink-volume @DEFAULT_SINK@ +5% && dunstify 'Volume Up 5%'
