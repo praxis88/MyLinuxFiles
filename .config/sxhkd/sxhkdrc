@@ -1,9 +1,5 @@
 F12
  exec /home/christopher/scripts/launcherscript.sh
-alt + t
- exec /usr/bin/thunar
-alt + c
- exec /usr/bin/chromium
 F6
  brightnessctl s 5%- & dunstify 'Brightness Down 5%'
 F7

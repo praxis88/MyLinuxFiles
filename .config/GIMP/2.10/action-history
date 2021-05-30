@@ -1,7 +1,0 @@
-# GIMP action-history
-
-(history-item "dockable-close-tab" 5)
-(history-item "image-new" 0)
-(history-item "dockable-detach-tab" 1)
-
-# end of action-history
