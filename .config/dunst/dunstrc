@@ -86,7 +86,7 @@
 
     ### Text ###
 
-    font = JetBrains Mono Medium 16 
+    font = Open Sans 16 
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -166,8 +166,7 @@
     max_icon_size = 32
 
     # Paths to default icons
-    icon_path = /usr/share/icons/Arc-ICONS/actions/32:/usr/share/icons/Arc-ICONS/animations/32:/usr/share/icons/Arc-ICONS/apps/32:/usr/share/icons/Arc-ICONS/categories/32:/usr/share/icons/Arc-ICONS/devices/32:/usr/share/icons/Arc-ICONS/emblems/32:/usr/share/icons/Arc-ICONS/mimetypes/32:/usr/share/icons/Arc-ICONS/panel/32:/usr/share/icons/Arc-ICONS/places/32:/usr/share/icons/Arc-ICONS/status/32:/usr/share/icons/Arc-ICONS/web/32:/usr/share/icons/hicolor/scalable/apps/:/usr/share/icons/hicolor/22x22/apps
-
+    icon_path = /usr/share/icons/BeautyLine/actions/scalable/:/usr/share/icons/BeautyLine/apps/scalable/:/usr/share/icons/BeautyLine/places/16/:/usr/share/icons/BeautyLine/devices/scalable/:/usr/share/icons/BeautyLine/mimetypes/scalable/
 
 ### History ###
 

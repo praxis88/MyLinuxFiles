@@ -15,7 +15,7 @@ for_window [class="^.*"] border pixel 3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-exec --no-startup-id 'lxsession -a'
+exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray

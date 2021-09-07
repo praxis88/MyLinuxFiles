@@ -3,7 +3,7 @@ configuration {
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
-/*	font: "Noto Sans 20";*/ 
+	font: "Open Sans Regular 20"; 
 /*	bw: 1;*/
 /*	location: 0;*/
 /*	padding: 20;*/
@@ -19,7 +19,7 @@ configuration {
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
-	icon-theme:"Tela-blue-dark" ;
+	icon-theme:"BeautyLines" ;
 /*	drun-match-fields: "name,generic,exec,categories";*/
 /*	drun-show-actions: false;*/
 	drun-display-format: "{name}";

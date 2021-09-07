@@ -4,10 +4,10 @@
  * Copyright: Dave Davenport
  */
 * {
-    background-color:      #222;
-    border-color:          White;
     text-color:           White;
-    font:            "Jetbrains Mono 15";
+    border-color:	White;
+    background-color:      #222;
+    font:            "Open Sans 15";
 }
 
 #window {

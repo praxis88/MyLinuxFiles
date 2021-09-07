@@ -21,7 +21,7 @@
 
 
 [colors]
-background = #222
+background = #cc222222
 background-alt = #444
 foreground = #dfdfdf
 foreground-alt = #555
@@ -63,7 +63,7 @@ font-3 = Weather Icons:size=12;1
 #####################################################################################################
 modules-left = i3
 modules-center = title
-modules-right = inbox openweathermap-simple updates xbacklight battery eth wlan wlan2 memory date 
+modules-right = openweathermap-simple updates eth wlan wlan2 eno1 date 
 #####################################################################################################
 
 tray-position = right
@@ -190,6 +190,16 @@ format-connected = <label-connected>
 label-connected =  %local_ip%
 
 format-disconnected =
+
+[module/eno1]
+type = internal/network
+interface = eno1
+interval = 3.0
+
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground}
+label-connected = %local_ip%
+
 
 
 [module/wlan2]
