@@ -1,14 +1,6 @@
 F12
  exec /home/christopher/scripts/launcherscript.sh
-F6
- brightnessctl s 5%- & dunstify 'Brightness Down 5%'
-F7
- brightnessctl s +5% && dunstify 'Brightness Up 5%'
-F8
- pactl set-sink-mute @DEFAULT_SINK@ toggle && dunstify 'Volume Mute Toggled'
-F9
- pactl set-sink-volume @DEFAULT_SINK@ -5% && dunstify 'Volume Down 5%'
-##F9
- ##playerctl play-pause
-F10
- pactl set-sink-volume @DEFAULT_SINK@ +5% && dunstify 'Volume Up 5%'
+
+ alt + d
+  rofi -show drun -theme dmenu
+

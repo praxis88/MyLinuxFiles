@@ -63,7 +63,7 @@ font-3 = Weather Icons:size=12;1
 #####################################################################################################
 modules-left = i3
 modules-center = title
-modules-right = openweathermap-simple updates eth wlan wlan2 eno1 date 
+modules-right = openweathermap-simple eth wlan wlan2 eno1 date 
 #####################################################################################################
 
 tray-position = right
