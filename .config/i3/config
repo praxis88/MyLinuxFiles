@@ -15,16 +15,16 @@ for_window [class="^.*"] border pixel 3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-#exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
-#exec --no-startup-id /usr/lib/kdeconnectd
+exec --no-startup-id /usr/bin/lxpolkit
+exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id nm-tray
 exec --no-startup-id pasystray
 exec --no-startup-id picom
 #exec --no-startup-id redshift-gtk
 exec --no-startup-id "udiskie -t"
-#exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 exec --no-startup-id /usr/bin/dunst
-#exec --no-startup-id kdeconnect-indicator
+exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id parcellite
 exec --no-startup-id sxhkd
 exec --no-startup-id "nitrogen --restore"
@@ -47,7 +47,7 @@ set $right semicolon
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Return exec lxterminal
+bindsym Mod1+Return exec kitty
 
 # kill focused window
 bindsym Mod1+Shift+q kill

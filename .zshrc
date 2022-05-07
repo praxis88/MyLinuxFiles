@@ -33,20 +33,21 @@ bindkey "^?" backward-delete-char
 
 
 # Use beam shape cursor on startup.
-echo -ne '\e[5 q'
+#echo -ne '\e[5 q'
 
 # Use beam shape cursor for each new prompt.
-preexec() {
-   echo -ne '\e[5 q'
-}
+#preexec() {
+#   echo -ne '\e[5 q'
+#}
 
 #feh --bg-scale /usr/share/pixmaps/triss.jpg
 export PATH=$PATH:/home/christopher/scripts
+export PATH=$PATH:/sbin
 
 
 
 #Sets Aliases
-alias sx=openimage.sh 
+#alias sx=openimage.sh 
 alias ls='lsd -hA --group-dirs first'
 alias vim='nvim'
 
