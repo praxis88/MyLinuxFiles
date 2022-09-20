@@ -1,8 +1,8 @@
 export EDITOR="nvim"
 export READER="evince"
-export TERMINAL="kitty"
+export TERMINAL="xfce4-terminal"
 export COLORTERM="truecolor"
-export BROWSER="brave-BROWSER"
+export BROWSER="brave-browser"
 export PAGER="less"
 export WM="i3"
 export OPENER="xdg-open"
@@ -168,3 +168,4 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
+. "$HOME/.cargo/env"

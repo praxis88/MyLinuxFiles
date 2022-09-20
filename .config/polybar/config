@@ -21,7 +21,7 @@
 
 
 [colors]
-background = #cc222222
+background = #222222
 background-alt = #444
 foreground = #dfdfdf
 foreground-alt = #555
@@ -63,7 +63,7 @@ font-3 = Weather Icons:size=12;1
 #####################################################################################################
 modules-left = i3
 modules-center = title
-modules-right = openweathermap-simple eth wlan wlan2 eno1 date 
+modules-right = openweathermap-simple bridge0 enp0s20u5 eno1 date 
 #####################################################################################################
 
 tray-position = right
@@ -93,35 +93,13 @@ format-prefix = " "
 interval = 1800
 click-left = $TERMINAL -e yay &
 
-[module/openweathermap-simple]
-type = custom/script
-exec = ~/scripts/openweathermap-simple.sh
-interval = 600
-label-font = 4
-click-left = $TERMINAL -e zsh -c  'curl wttr.in; "$SHELL"' 
-click-right = mpv --loop-file=inf "https://radar.weather.gov/lite/N0R/HTX_loop.gif"
-
-;[module/filesystem]
-;type = internal/fs
-;interval = 25
-;
-;mount-0 = /
-;label-mounted =  %percentage_used%%
-;label-unmounted = %mountpoint% not mounted
-;label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/title]
 type = internal/xwindow
 
-[module/inbox]
-type = custom/script
-exec = /home/christopher/scripts/inbox-shellnetrc.sh
-interval = 300
-format-prefix = " "
-click-left = thunderbird &
-
 [module/i3]
 type = internal/i3
+pin-workspaces =true
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
@@ -150,22 +128,6 @@ label-urgent = %index%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-; Separator in between workspaces
-; label-separator = |
-
-
-[module/xbacklight]
-type = internal/xbacklight
-
-format = <label>
-label =  %percentage%%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
-label = %percentage_used%%
 
 [module/date]
 type = internal/date
@@ -181,16 +143,6 @@ time-alt =
 label = %date% %time%
 
 
-[module/wlan]
-type = internal/network
-interface = wlp2s0
-interval = 3.0
-
-format-connected = <label-connected>
-label-connected =  %local_ip%
-
-format-disconnected =
-
 [module/eno1]
 type = internal/network
 interface = eno1
@@ -201,16 +153,6 @@ format-connected-prefix-foreground = ${colors.foreground}
 label-connected = %local_ip%
 
 
-
-[module/wlan2]
-type = internal/network
-interface = wlan0
-interval = 3.0
-
-format-connected = <label-connected>
-label-connected =  %local_ip%
-
-format-disconnected =
 
 [module/eth]
 type = internal/network
@@ -223,48 +165,33 @@ label-connected = %local_ip%
 
 format-disconnected =
 
-[module/pulseaudio]
-type = internal/pulseaudio
+[module/bridge0]
+type = internal/network
+interface = bridge0
+interval = 3.0
 
-format-volume = <label-volume>
-label-volume =  %percentage%%
-label-volume-foreground = ${colors.foreground}
+format-connected-prefix = " BRIDGE - "
+format-connected-prefix-foreground = ${colors.foreground}
+label-connected = %local_ip%
 
-label-muted =  muted
-label-muted-foreground = #666
+format-disconnected =
 
+[module/enp0s20u5]
+type = internal/network
+interface = enp0s20u5
+interval = 3.0
 
+format-connected-prefix = " enp0s20u5 - "
+format-connected-prefix-foreground = ${colors.foreground}
+label-connected = %local_ip%
 
-[module/battery]
-type = internal/battery
-battery = BAT0
-adapter = AC
-full-at = 98
+format-disconnected =
 
-format-charging = <label-charging>
-format-charging-prefix = 
-label-charging = %percentage%%
-
-format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %percentage%%
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
-ramp-capacity-foreground = ${colors.foreground}
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
 
-; vim:ft=dosini

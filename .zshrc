@@ -32,26 +32,21 @@ bindkey -s '^o' 'lfcd\n'
 bindkey "^?" backward-delete-char
 
 
-# Use beam shape cursor on startup.
-#echo -ne '\e[5 q'
 
-# Use beam shape cursor for each new prompt.
-#preexec() {
-#   echo -ne '\e[5 q'
-#}
-
-#feh --bg-scale /usr/share/pixmaps/triss.jpg
 export PATH=$PATH:/home/christopher/scripts
 export PATH=$PATH:/sbin
+export PATH=$PATH:/home/christopher/.cargo/bin
+
 
 
 
 #Sets Aliases
-#alias sx=openimage.sh 
 alias ls='lsd -hA --group-dirs first'
 alias vim='nvim'
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-source /usr/share/doc/pkgfile/command-not-found.zsh 2>/dev/null
+source $PESA_POLARIS_SCRIPTS_DIR/polarisVar.sh
+source /usr/share/doc/find-the-command/ftc.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 

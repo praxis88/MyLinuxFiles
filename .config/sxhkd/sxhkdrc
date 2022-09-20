@@ -1,6 +1,4 @@
-F12
- exec /home/christopher/scripts/launcherscript.sh
+#3
+# exec kitty
 
- alt + d
-  rofi -show drun -theme dmenu
 

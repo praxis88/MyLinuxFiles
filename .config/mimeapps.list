@@ -1,0 +1,17 @@
+[Added Associations]
+text/plain=codium.desktop;nvim.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-RAYXR1.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-RAYXR1.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-GAHTR1.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-GAHTR1.desktop;
+text/tcl=codium.desktop;
+
+[Default Applications]
+x-scheme-handler/mailto=userapp-Thunderbird-RAYXR1.desktop
+message/rfc822=userapp-Thunderbird-RAYXR1.desktop
+x-scheme-handler/mid=userapp-Thunderbird-RAYXR1.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-GAHTR1.desktop
+text/calendar=userapp-Thunderbird-GAHTR1.desktop
+application/x-extension-ics=userapp-Thunderbird-GAHTR1.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-GAHTR1.desktop
+x-scheme-handler/msteams=teams.desktop
