@@ -70,7 +70,7 @@ colors:
     white:   '#e0e3e7'
 
 
-background_opacity: 1
+window_opacity: 1
 
 selection:
   save_to_clipboard: true
